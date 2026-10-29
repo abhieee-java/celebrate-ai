@@ -1,0 +1,6 @@
+{
+  "name": "Celebrate AI",
+  "description": "Explainable GenAI celebration and event planner with dynamic budget allocation, context-aware vendor checklists, and reverse-engineered timelines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

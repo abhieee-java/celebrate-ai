@@ -1,0 +1,165 @@
+/* ==========================================================================
+   DESIGN TOKENS - CELEBRATE AI (Professional Architectural System)
+   Strict 4px grid · Editorial Elegance · WCAG AA Contrast Validated
+   ========================================================================== */
+
+:root {
+  /* Colors - Light Mode (Architectural Linen & Royal Bronze) */
+  --color-bg: #f8f6f2;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1ede5;
+  --color-surface-3: #e6e0d4;
+  --color-border: #e3ddd3;
+  --color-border-hover: #cfc7ba;
+
+  --color-text-primary: #181512;     /* 17.2:1 contrast on #f8f6f2 */
+  --color-text-secondary: #4a443d;   /* 8.5:1 contrast */
+  --color-text-muted: #766d62;       /* 4.9:1 contrast */
+
+  --color-accent: #a84b18;           /* Regal terracotta amber */
+  --color-accent-hover: #8f3e12;
+  --color-accent-contrast: #ffffff;
+  --color-accent-subtle: #fcf1e8;
+
+  --color-gold: #9e7526;
+  --color-gold-subtle: #faf4e8;
+
+  --color-success: #166534;
+  --color-success-subtle: #f0fdf4;
+  --color-warning: #9a3412;
+  --color-warning-subtle: #fff7ed;
+  --color-error: #991b1b;
+  --color-error-subtle: #fef2f2;
+  --color-info: #075985;
+  --color-info-subtle: #f0f9ff;
+
+  /* Typography */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.84rem + 0.15vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.08rem + 0.25vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.18rem + 0.35vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.4rem + 0.5vw, 1.875rem);
+  --text-3xl: clamp(1.875rem, 1.7rem + 0.75vw, 2.375rem);
+  --text-4xl: clamp(2.25rem, 2rem + 1vw, 3rem);
+
+  /* Spacing (Strict 4px grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+  --space-11: 44px;
+  --space-12: 48px;
+
+  /* Radius (Professional architectural radius) */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-full: 9999px;
+
+  /* Shadows (Subtle, diffused, multi-layered elevation) */
+  --shadow-sm: 0 1px 2px 0 rgba(24, 21, 18, 0.04);
+  --shadow-md: 0 3px 8px -1px rgba(24, 21, 18, 0.06), 0 1px 3px -1px rgba(24, 21, 18, 0.03);
+  --shadow-lg: 0 10px 24px -4px rgba(24, 21, 18, 0.08), 0 3px 8px -2px rgba(24, 21, 18, 0.03);
+  --shadow-xl: 0 20px 40px -8px rgba(24, 21, 18, 0.12);
+
+  /* Easing & Timing */
+  --ease-standard: cubic-bezier(0.2, 0.0, 0, 1.0);
+  --ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-decelerate: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-accelerate: cubic-bezier(0.4, 0.0, 1, 1);
+
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-base: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+
+  /* Blur */
+  --blur-sm: 8px;
+  --blur-md: 16px;
+  --blur-lg: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #11100e;
+    --color-surface: #1a1816;
+    --color-surface-2: #24211e;
+    --color-surface-3: #302c27;
+    --color-border: #332f2a;
+    --color-border-hover: #48423b;
+
+    --color-text-primary: #f5f2eb;
+    --color-text-secondary: #c9c2b4;
+    --color-text-muted: #958c7f;
+
+    --color-accent: #d96929;
+    --color-accent-hover: #e87b3d;
+    --color-accent-contrast: #11100e;
+    --color-accent-subtle: #29180f;
+
+    --color-gold: #c8983e;
+    --color-gold-subtle: #241c0e;
+
+    --color-success: #22c55e;
+    --color-success-subtle: #112818;
+    --color-warning: #f97316;
+    --color-warning-subtle: #2b170c;
+    --color-error: #ef4444;
+    --color-error-subtle: #2b1111;
+    --color-info: #38bdf8;
+    --color-info-subtle: #0d2738;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 12px 28px -4px rgba(0, 0, 0, 0.6);
+    --shadow-xl: 0 24px 48px -12px rgba(0, 0, 0, 0.7);
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #11100e;
+  --color-surface: #1a1816;
+  --color-surface-2: #24211e;
+  --color-surface-3: #302c27;
+  --color-border: #332f2a;
+  --color-border-hover: #48423b;
+
+  --color-text-primary: #f5f2eb;
+  --color-text-secondary: #c9c2b4;
+  --color-text-muted: #958c7f;
+
+  --color-accent: #d96929;
+  --color-accent-hover: #e87b3d;
+  --color-accent-contrast: #11100e;
+  --color-accent-subtle: #29180f;
+
+  --color-gold: #c8983e;
+  --color-gold-subtle: #241c0e;
+
+  --color-success: #22c55e;
+  --color-success-subtle: #112818;
+  --color-warning: #f97316;
+  --color-warning-subtle: #2b170c;
+  --color-error: #ef4444;
+  --color-error-subtle: #2b1111;
+  --color-info: #38bdf8;
+  --color-info-subtle: #0d2738;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 28px -4px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 24px 48px -12px rgba(0, 0, 0, 0.7);
+}
